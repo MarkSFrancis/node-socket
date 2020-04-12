@@ -1,0 +1,28 @@
+{
+  "name": "node-socket",
+  "version": "1.0.0",
+  "description": "A sample application that demos websockets over NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -r esm app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkSFrancis/node-socket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkSFrancis/node-socket/issues"
+  },
+  "homepage": "https://github.com/MarkSFrancis/node-socket#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  }
+}
