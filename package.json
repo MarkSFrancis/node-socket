@@ -2,10 +2,13 @@
   "name": "node-socket",
   "version": "1.0.0",
   "description": "A sample application that demos websockets over NodeJS",
-  "main": "app.js",
+  "main": "server/app.js",
   "scripts": {
-    "start": "nodemon -r esm app.js"
+    "start": "run-p server build-client",
+    "server": "nodemon -r esm server/app.js",
+    "build-client": "webpack --watch"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarkSFrancis/node-socket.git"
@@ -19,10 +22,18 @@
   "homepage": "https://github.com/MarkSFrancis/node-socket#readme",
   "devDependencies": {
     "eslint": "^6.8.0",
-    "nodemon": "^2.0.3"
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "html-webpack-plugin": "^4.2.0",
+    "nodemon": "^2.0.3",
+    "npm-run-all": "^4.1.5",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "esm": "^3.2.25",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ws": "^7.2.3",
+    "webpack": "^4.42.1",
+    "webpack-dev-middleware": "^3.7.2"
   }
 }
