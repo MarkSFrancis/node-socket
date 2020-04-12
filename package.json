@@ -4,9 +4,7 @@
   "description": "A sample application that demos websockets over NodeJS",
   "main": "server/app.js",
   "scripts": {
-    "start": "run-p server build-client",
-    "server": "nodemon -r esm server/app.js",
-    "build-client": "webpack --watch"
+    "start": "nodemon -r esm server/app.js"
   },
   "private": true,
   "repository": {
